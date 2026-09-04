@@ -1,614 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>BIST Purulia</title>
-
-    <!-- Bootstrap -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!--  CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIST - Bengal Institute of Science & Technology, Purulia</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <!-- =====================
-             HEADER
-    ======================== -->
-    <header>
 
-            <!-- NOTICE BAR -->
-        
-        <section class="notice-bar">
-            <div class="container">
-                <div class="notice-bar-wrapper">
-                    
-                    <!-- Notice Label -->
+  <header class="top-bar">
+    <div class="container">
+      <div class="contact-info">
+        <span><i class="fa-solid fa-phone"></i> Admission Helpline: 90640 06160</span>
+        <span><i class="fa-solid fa-envelope"></i> info@bistpurulia.org</span>
+        <span><i class="fa-solid fa-graduation-cap"></i> Affiliated to SKBU</span>
+        <span class="naac-badge">NAAC Grade: B+</span>
+      </div>
+      <div class="top-links">
+        <a href="#"><i class="fa-solid fa-user"></i> Student Login</a>
+        <span>|</span>
+        <a href="#"><i class="fa-solid fa-lock"></i> ERP Login</a>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-                    <div class="notice-label">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        <span>NOTICE</span>
-                    </div>
-
-                    <!-- LIVE IMPORTANT NOTICE TICKER -->
-               
-                    <div class="notice-wrapper">
-                        <div class="notice-track">
-                            
-                            <!-- Original Notices -->            
-
-                            <a href="#" class="notice-item">
-                                <span class="badge badge-admission">Admission</span>
-                                 Admissions Open for Academic Session 2026-27
-                            </a>
-
-                            <a href="#" class="notice-item">
-                                <span class="badge badge-event">Event</span>
-                                Campus Recruitment Drive 2026
-                            </a>
-
-                            <a href="#" class="notice-item">
-                                <span class="badge badge-scholarship">Scholarship</span>
-                                Scholarship Applications Now Open
-                            </a>
-
-                            <a href="#" class="notice-item">
-                                <span class="badge badge-exam">Exam</span>
-                                Semester Examination Form Submission Started
-                            </a>
-
-                            <a href="#" class="notice-item">
-                                <span class="badge badge-admission">Admission</span>
-                                Apply Online Before 31 July 2026
-                            </a>
-
-    
-                            <!-- Duplicate Notices -->
-       
-                            <a href="#" class="notice-item" aria-hidden="true">
-                                <span class="badge badge-admission">Admission</span>
-                                Admissions Open for Academic Session 2026–27
-                            </a>
-
-                            <a href="#" class="notice-item" aria-hidden="true">
-                                <span class="badge badge-event">Event</span>
-                                Campus Recruitment Drive 2026
-                            </a>
-
-                            <a href="#" class="notice-item" aria-hidden="true">
-                                <span class="badge badge-scholarship">Scholarship</span>
-                                Scholarship Applications Now Open
-                            </a>
-
-                            <a href="#" class="notice-item" aria-hidden="true">
-                                <span class="badge badge-exam">Exam</span>
-                                Semester Examination Form Submission Started
-                            </a>
-
-                            <a href="#" class="notice-item" aria-hidden="true">
-                                <span class="badge badge-admission">Admission</span>
-                                Apply Online Before 31 July 2026
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Notice Action -->
-                    
-                    <div class="notice-action">
-                        <a href="notices.html" class="btn btn-notice">
-                            View All
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </a>
-                    </div>
-                </div>
+  <nav class="navbar">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            <img src="images/bistlogo.png" alt="Bengal Institute of Science & Technology Logo" class="logo-img">
+            <div class="logo-text">
+                <h2>Bengal Institute of Science & Technology</h2>
+                <p>Purulia, West Bengal</p>
             </div>
-        </section>
+        </a>
 
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
 
-        <!-- MAIN NAVIGATION -->
+        <li class="dropdown">
+            <a href="#">Academics <i class="fa-solid fa-chevron-down text-xs"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Bachelor of Computer Applications (BCA)</a></li>
+                <li><a href="#">Bachelor of Business Administration (BBA)</a></li>
+                <li><a href="#">Academic Calender</a></li>
+                <li><a href="#">Syllabus</a></li>
+            </ul>
+        </li>
         
-        <nav class="navbar navbar-expand-xl">
-            <div class="container">
+        <li class="dropdown">
+            <a href="#">Admission<i class="fa-solid fa-chevron-down text-xs"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Admission Process</a></li>
+                <li><a href="#">Eligibility Criteria</a></li>
+                <li><a href="#">Fee Structure</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Apply Online</a></li>
+            </ul>
+        </li>
 
-                <!-- College Logo -->
+
+        <li class="dropdown">
+            <a href="#">Campus Life <i class="fa-solid fa-chevron-down text-xs"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Laboratories</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">About <i class="fa-solid fa-chevron-down text-xs"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">About BIST</a></li>
+                <li><a href="#">Leadership & Vision</a></li>
+                <li><a href="#">Vision & Mission</a></li>
+                <li><a href="#">Infrastructure</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Gallery</a></li>
+    
+      </ul>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="#" class="btn-cta">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+
+    <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+        <span class="admission-badge">ADMISSIONS OPEN 2026–27</span>
+        <h2 class="hero-title">
+            Shape Your Career With <br>
+            <span>Bengal Institute of Science & Technology</span>
+        </h2>
+        <p class="hero-description">
+            Empowering future professionals through quality education, experienced faculty, modern learning facilities, and industry-oriented BCA & BBA programmes.
+        </p>
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="btn-outline">Download Prospectus <i class="fa-solid fa-download"></i></a>
+        </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years of Excellence</p>
+            </div>
+            <div class="stat-item">
+                <h3>2500+</h3>
+                <p>Students</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Faculty Members</p>
+            </div>
+            <div class="stat-item">
+                <h3>BCA & BBA</h3>
+                <p>Programmes</p>
+            </div>
+            </div>
+    </div>
+    </section>
+
+    <div class="stats-bar">
+    <div class="stats-card">
+        
+        <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="stat-text">
+            <h4>2001</h4>
+            <p>Established</p>
+        </div>
+        </div>
+
+        <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="stat-text">
+            <h4>SKBU</h4>
+            <p>Affiliated to</p>
+        </div>
+        </div>
+
+        <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="stat-text">
+            <h4>Support</h4>
+            <p>Placement</p>
+        </div>
+        </div>
+
+        <div class="stat-item">
+        <div class="stat-icon"><i class="fa-solid fa-user-gear"></i></div>
+        <div class="stat-text">
+            <h4>Training</h4>
+            <p>Industry</p>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Messages Section: President & Principal -->
+    <section class="leadership-section">
+    <div class="container">
+        <div class="section-header">
+        <span class="section-tag">LEADERSHIP MESSAGES</span>
+        <h2 class="section-heading">Words from Our Mentors</h2>
+        </div>
+
+        <div class="leadership-grid">
+        
+        <!-- President Card -->
+        <div class="leadership-card">
+            <div class="leader-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="President" class="leader-img">
+            <div class="quote-badge"><i class="fa-solid fa-quote-left"></i></div>
+            </div>
+            <div class="leader-content">
+            <p class="leader-quote">
+                "Our vision at BIST is to cultivate an environment where academic rigor meets real-world innovation. We empower students with values and technical competencies to excel in global leadership roles."
+                <a href="#" class="know-more-btn">
+                    Know More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </p>
+            <div class="leader-details">
+                <h3 class="leader-name">President's Message</h3>
+                <p class="leader-title">President, BIST Purulia</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Principal Card -->
+        <div class="leadership-card">
+            <div class="leader-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Principal" class="leader-img">
+            <div class="quote-badge"><i class="fa-solid fa-quote-left"></i></div>
+            </div>
+            <div class="leader-content">
+            <p class="leader-quote">
+                "Education is the foundation for individual growth and societal change. Through modern pedagogy, industry-aligned curricula, and hands-on training, we shape student aspirations into reality."
+                <a href="#" class="know-more-btn">
+                    Know More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </p>
+            <div class="leader-details">
+                <h3 class="leader-name">Principal's Desk</h3>
+                <p class="leader-title">Principal, BIST Purulia</p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="programs-section">
+    <div class="container">
+        <div class="programs-grid">
+        
+        <div class="about-column">
+            <span class="section-tag">About BIST</span>
+            <h2 class="section-heading">A Legacy of Excellence</h2>
+            <p class="about-text">
+            BIST Purulia is committed to providing quality education that blends academic excellence with practical learning. Our mission is to nurture talent, encourage innovation, and empower students to become responsible professionals and future leaders.
+            </p>
+            <div class="about-preview-card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students on Campus">
+            <div class="badge-overlay">
+                <i class="fa-solid fa-door-open"></i> Admissions Open 2026–27
+            </div>
+            </div>
+        </div>
+
+        <div class="cards-container">
             
-                <a class="navbar-brand" href="index.html">
-                    <img
-                        src="assets/images/bistlogo.png"
-                        alt="BIST Purulia Logo"
-                    class="logo">
-
-                    <div class="logo-content">
-                        <h1 class="college-name">
-                            <span>Bengal Institute</span>
-                            <span>of Science &amp; Technology</span>
-                        </h1>
-                        <p class="college-location">
-                            Purulia, West Bengal
-                        </p>
-                    </div>
-                </a>
-
-                <!-- Mobile Toggle Button -->
-
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
-                    <!-- Navigation Menu -->
-               
-                <div
-                    class="collapse navbar-collapse"
-                    id="mainNavbar">
-
-                    <ul class="navbar-nav mx-auto">
-                        
-                        <!-- Home -->
-
-                        <li class="nav-item">
-                            <a class="nav-link current-page" href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <!-- About -->
-
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link">
-                                About
-                                <i class="fa-solid fa-chevron-down nav-arrow"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="about.html">
-                                        About BIST
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="leadership.html">
-                                        Leadership & Vision
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="vision.html">
-                                        Vision & Mission
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="infrastructure.html">
-                                        Infrastructure
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <!-- Academics -->
-
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link">
-                                Academics
-                                <i class="fa-solid fa-chevron-down nav-arrow"></i>
-                            </a>
-                    
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="bca.html">
-                                        Bachelor of Computer Applications (BCA)
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a class="dropdown-item" href="bba.html">
-                                        Bachelor of Business Administration (BBA)
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a class="dropdown-item" href="academic-calendar.html">
-                                        Academic Calendar
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="syllabus.html">
-                                        Syllabus
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Admissions -->
-
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link">
-                                Admissions
-                                <i class="fa-solid fa-chevron-down nav-arrow"></i>
-                            </a>
-                    
-                            <ul class="dropdown-menu">
-                                <li>
-                                <a class="dropdown-item" href="admission-process.html">
-                                    Admission Process
-                                </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="eligibility.html">
-                                        Eligibility Criteria
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="fee-structure.html">
-                                        Fee Structure
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="scholarship.html">
-                                        Scholarships
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="apply.html">
-                                        Apply Online
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </li>
-
-                        <!-- Campus Life -->
-
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link"
-                                href="#">
-                                Campus Life
-                                <i class="fa-solid fa-chevron-down nav-arrow"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="events.html">
-                                        Events
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a class="dropdown-item" href="library.html">
-                                        Library
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="laboratory.html">
-                                        Laboratories
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="dropdown-item" href="sports.html">
-                                        Sports
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Gallery -->
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">
-                                Gallery
-                            </a>
-                        </li>
-
-                        <!-- Contact -->
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">
-                                Contact
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <!-- ==========================
-                        Apply Button
-                    =========================== -->
-
-                    <div class="navbar-action">
-                        <a href="apply.html" class="btn btn-primary">
-                            Apply Now
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+            <div class="program-card">
+            <div>
+                <div class="card-icon bca-icon">
+                <i class="fa-solid fa-laptop-code"></i>
                 </div>
-            </div>
-        </nav>
-    
-    </header>
+                <h3>BCA</h3>
+                <p class="degree-title">Bachelor of Computer Applications</p>
 
-    
-    
-    <!-- =====================
-            MAIN
-    ======================== -->
-    
-    <main>
-
-
-            <!-- HERO SECTION -->
-
-
-        <section class="hero">
-
-                <!-- HERO BACKGROUND -->
-
-            <div class="hero-image">
-
-                <img
-                    src="assets/images/coll2.jpg"
-                    alt="Bengal Institute of Science & Technology">
-
+                <ul class="specs-list">
+                <li><strong>Duration:</strong> 4 Years</li>
+                <li><strong>Eligibility:</strong> 10+2 Any Stream</li>
+                <li><strong>Career Opportunities:</strong> Software Developer, Web Developer, Data Analyst & More</li>
+                </ul>
             </div>
 
-    
-                <!-- HERO CONTENT -->
+            <a href="#" class="know-more-btn">
+                Know More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            </div>
 
-            <div class="container">
-
-                <div class="hero-content">
-
-                    <!-- Admission Badge -->
-
-                    <span class="hero-badge">
-
-                        Admissions Open 2026–27
-
-                    </span>
-
-                    <!-- Main Heading -->
-
-                    <h1 class="hero-title">
-
-                        Shape Your Career
-
-                        <br>
-
-                        With
-
-                        <span>
-
-                            Bengal Institute of
-
-                            <br>
-
-                            Science & Technology
-
-                        </span>
-
-                    </h1>
-
-                    <!-- Description -->
-
-                    <p class="hero-description">
-
-                        Empowering future professionals through quality
-                        education, experienced faculty, modern learning
-                        facilities and industry-oriented BCA & BBA programmes.
-
-                    </p>
-
-
-                    <!-- Buttons -->
-
-                    <div class="hero-buttons">
-
-                        <a href="pages/admission.html"
-                        class="btn btn-primary">
-
-                            <span>Apply Now</span>
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
-                        </a>
-
-                        <a href="pages/course.html"
-                        class="btn btn-outline">
-
-                            <span>Explore Courses</span>
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- Statistics -->
-
-                    <div class="hero-stats">
-
-                        <div class="stat-item">
-
-                            <h3>15+</h3>
-
-                            <p>Years of Excellence</p>
-
-                        </div>
-
-                        <div class="stat-item">
-
-                            <h3>2500+</h3>
-
-                            <span>Students</span>
-
-                        </div>
-
-                        <div class="stat-item">
-
-                            <h3>30+</h3>
-
-                            <span>Faculty Members</span>
-
-                        </div>
-
-                        <div class="stat-item">
-
-                            <h3>BCA</h3>
-
-                            <span>&amp; BBA Programmes</span>
-
-                        </div>
-
-                    </div>
-
+            <div class="program-card">
+            <div>
+                <div class="card-icon bba-icon">
+                <i class="fa-solid fa-chart-line"></i>
                 </div>
+                <h3>BBA</h3>
+                <p class="degree-title">Bachelor of Business Administration</p>
 
+                <ul class="specs-list">
+                <li><strong>Duration:</strong> 4 Years</li>
+                <li><strong>Eligibility:</strong> 10+2 Any Stream</li>
+                <li><strong>Career Opportunities:</strong> Marketing, Finance, HR, Operations & More</li>
+                </ul>
             </div>
 
-            <!--==========================================================
-                SCROLL INDICATOR
-            ===========================================================-->
-
-            <div class="hero-scroll">
-
-                <a href="#about">
-
-                    Scroll
-
-                    <i class="fa-solid fa-angle-down"></i>
-
-                </a>
-
+            <a href="#" class="know-more-btn">
+                Know More <i class="fa-solid fa-arrow-right"></i>
+            </a>
             </div>
 
-        </section>
+        </div>
 
-        <!--==============================================================
-            HERO INFORMATION CARD
-        ===============================================================-->
+        </div>
+    </div>
+    </section>
 
-        <section class="hero-information">
 
-            <div class="container">
-
-                <div class="hero-information-card">
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-user-graduate"></i>
-
-                        <div>
-
-                            <h4>2500+</h4>
-
-                            <p>Students Enrolled</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-book-open"></i>
-
-                        <div>
-
-                            <h4>BCA & BBA</h4>
-
-                            <p>Industry Focused Programmes</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-chalkboard-user"></i>
-
-                        <div>
-
-                            <h4>30+</h4>
-
-                            <p>Experienced Faculty</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-award"></i>
-
-                        <div>
-
-                            <h4>15+</h4>
-
-                            <p>Years of Excellence</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+    <!-- Site Footer -->
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+        
+        <!-- Column 1: About Institution -->
+        <div class="footer-about">
+            <h3>BIST Purulia</h3>
+            <p>
+            Bengal Institute of Science & Technology is dedicated to providing industry-leading education in computer applications and business management.
+            </p>
+            <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
+        </div>
 
-        </section>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> About Us</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Academic Programs</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Admission Process</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Facilities</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Gallery</a></li>
+            </ul>
+        </div>
 
+        <!-- Column 3: Academic Programs -->
+        <div class="footer-column">
+            <h4>Programs</h4>
+            <ul class="footer-links">
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> BCA (4 Years)</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> BBA (4 Years)</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Download Syllabus</a></li>
+            <li><a href="#"><i class="fa-solid fa-chevron-right text-xs"></i> Download Prospectus</a></li>
+            </ul>
+        </div>
 
+        <!-- Column 4: Contact Info -->
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <ul class="footer-contact">
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>BIST Campus, Purulia, West Bengal, India</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 90640 06160</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@bistpurulia.org</span>
+            </li>
+            </ul>
+        </div>
 
+        </div>
+    </div>
 
-    </main>
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+        <div class="container">
+        <p>&copy; 2026 Bengal Institute of Science & Technology. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Sitemap</a>
+        </div>
+        </div>
+    </div>
+    </footer>
 
-
-
-    <!-- Bootstrap JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!--JS -->
-
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/notice.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/counter.js"></script>
 </body>
 </html>
-
-
-
-
-
-
